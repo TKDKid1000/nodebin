@@ -9,10 +9,15 @@
     <body>
         <h1><%=name%></h1>
         <p><%=description%></p>
-        <form id="pastebin" method="POST">
+        <p style="text-align: right;">
             <button title="Upload" class="button" onclick="javascript:document.getElementById('pastebin').submit();">
-                <i class="fas fa-paper-plane fa-3x"></i>
+                <i class="far fa-save fa-3x"></i>
             </button>
+            <button title="New" class="button" onclick="javascript:window.location.replace('')">
+                <i class="fas fa-external-link-alt fa-3x"></i>
+            </button>
+        </p>
+        <form id="pastebin" method="POST">
             <textarea id="content" name="content" placeholder="Type paste here"></textarea>
         </form>
         <p style="text-align: right;">Running NodeBin <%=version%></p>
