@@ -12,8 +12,6 @@ config.name="NodeBin"
 // full html works here too.
 config.description=`<p>Hello! Welcome to NodeBin.
 NodeBin is the best pastebin.</p>`
-// any reverse proxy subpath. if your app runs on localhost/nodebin use "/nodebin". if none (ie. localhost) use "/".
-config.path="";
 
 // DO NOT REMOVE THIS
 module.exports = config;
