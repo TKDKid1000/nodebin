@@ -10,8 +10,10 @@ config.name="NodeBin"
 // the description of the nodebin. just any text you want to display with the nodebin.
 // use `text` for a multiline string.
 // full html works here too.
-config.description=`Hello! Welcome to NodeBin.
-NodeBin is the best pastebin.`
+config.description=`<p>Hello! Welcome to NodeBin.
+NodeBin is the best pastebin.</p>`
+// any reverse proxy subpath. if your app runs on localhost/nodebin use "/nodebin". if none (ie. localhost) use "/".
+config.path="";
 
 // DO NOT REMOVE THIS
 module.exports = config;
