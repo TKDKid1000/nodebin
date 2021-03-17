@@ -8,7 +8,7 @@ const config = require("./config");
 
 app.set('view engine', 'ejs')
 app.set('views', "./template")
-app.use("/static", express.static(__dirname + '/static'));
+app.use(express.static('static'));
 app.use(bodyParser.urlencoded({ extended: true })); 
 
 app.get("", (request, response) => {
